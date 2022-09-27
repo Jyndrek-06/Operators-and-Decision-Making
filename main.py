@@ -37,25 +37,44 @@ print(newSeconds)
 # == equal
 # != different or not equal to
 
+# Learning Comparison Operators
+my_bool = 10 == 20 #True or False
+print(my_bool) #False
+
+my_bool = 'white' == 'White'.lower()
+print(my_bool) #True
+
+my_bool = 4 < 5 and 5 > 6
+print(my_bool)
+
+
 # Comparison Operators Practice 1:
 # ask the user for their age
 # if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
+age = int(input("How old are you?"))
+if age >= 18 and age <= 21:
+  print("You can vote")
+else:
+  print("Oops, better luck next time")
 
-
-
-
-
+  
 # Comparison Operators Practice  2:
 # Create two variables (num1 and num2) with the following values: 36 and 17. Check if num1 is greater than or equal to num2 and store the result of that comparison in a variable called my_bool
-
-
-
+num1 = 36
+num2 = 17
+my_bool = num1 >= num2
+print(my_bool)
 
 # Comparison Operators Practice  3:
 # Create two variables (num1 and num2):
 # Inside num1, store the result of the square root of 25
 # Inside num2, store the number 5.
 # Check if num1 is equal to num2 and store the result of that comparison in a variable called my_bool.
+import math
+num1 = math.sqrt(25)
+num2 = 5
+my_bool = num1 == num2
+print(my_bool)
 
 
 # Comparison Operators Practice #4:
@@ -66,15 +85,30 @@ print(newSeconds)
 # Inside num2, store the result of 24 x 8
 
 # Check if num1 is different from num2 and store the result of that comparison in a variable called my_bool.
-
-
-
-
-
-
+num1 = 64 * 3
+num2 = 24 * 8
+my_bool = num1 == num2
+print(my_bool)
 
 ##############################logical operators##################################################
+# Brief Logical Operator Lesson
+my_bool = (55 == 100) and (5 == 2 * 3)
+print(my_bool)
 
+my_bool = 1 == 10 or 3 == 3
+print(my_bool)
+
+text = "This sentence is short"
+my_bool = ('sentence' in text) and ('python' in text)
+print(my_bool)
+
+text = "This sentence is short"
+my_bool = ('sentence' in text) or ('python' in text)
+print(my_bool)
+
+text = "This sentence is short"
+my_bool = ('sentence' in text) and ('python' not in text)
+print(my_bool)
 
 # Logical Operators Practice #1
 # Create three variables (num1, num2, and num3):
@@ -86,8 +120,10 @@ print(newSeconds)
 # Inside num3, store the value 48
 
 # Check if num1 is greater than num2, and less than num3. Store the result of that comparison in a variable called my_bool.
-
-
+num1 = 36
+num2 = 72/2
+num3 = 48
+my_bool = num1 > num2 and 
 
 
 # Logical Operators Practice #2
